@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A RPG GAME</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1#title {
+      color: #333;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p#description {
+      color: #555;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #survey-form {
+      background-color: #ffffff;
+      padding: 20px 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    fieldset {
+      border: none;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    #submit {
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    #submit:hover {
+      background-color: #45a049;
+    }
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+h1#title {
+  color: #333;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+p#description {
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+  </style>
+</head>
+<body>
+  <h1 id="title">A RPG GAME</h1>
+  <p id="description">How to start a RPG game?</p>
+  
+  <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">
+        Enter Your First Name:
+        <input required id="name" type="text" placeholder="Insert your First name"/>
+      </label>
+      <label for="last-name">
+        Enter Your Last Name:
+        <input required id="last-name" type="text" placeholder="Insert your Last name"/> 
+      </label>
+      <label for="number" id="number-label">What's your age?
+        <input name="age" id="number" type="number" min="12" max="120" placeholder="Age">
+      </label>
+      <label for="email" id="email-label">
+        Email: 
+        <input required id="email" type="email" placeholder="Insert your email"/>
+      </label>
+      <label for="dropdown"> Referrer:
+        <select id="dropdown">
+          <option value="">[select one]</option>
+          <option value="youtube">YouTube</option>
+          <option value="facebook">Facebook</option>
+          <option value="twitter">Twitter</option>
+          <option value="others">Others</option>
+        </select>
+      </label>
+      <label for="tabletop-rpg">
+        <input id="tabletop-rpg" type="radio" name="rpg-game" value="tabletop"/> TABLETOP RPG
+      </label>
+      <label for="online-rpg">
+        <input id="online-rpg" type="radio" name="rpg-game" value="online"/> RPG ONLINE
+      </label>
+      <label for="explain">Explain to us:
+        <textarea id="explain" name="explain" rows="3" cols="30" placeholder="I like when I have a dragon"></textarea>
+      </label>
+      <label>
+        <input type="checkbox" name="terms" value="1"/> Do you accept the terms?
+      </label>
+      <label>
+        <input type="checkbox" name="updates" value="2"/> Do you want to receive updates on email?
+      </label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit" />
+  </form>
+</body>
+</html>
