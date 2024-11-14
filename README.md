@@ -15,7 +15,7 @@ This project is a survey form designed to collect information from RPG players a
 8. [Usage Example](#usage-example)
 9. [Contributing](#contributing)
 10. [License](#license)
-11. [Authors and Acknowledgments](#authors-and-acknowledgments)
+11. [Author](#author)
 
 ---
 
